@@ -1,0 +1,48 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+/* #cd2125 = 빨강 #231f55 = 남색 #333=회색 */
+/* reset */
+	*{margin:0;padding:0}
+	li {list-style:none}
+	body {font-family:"Noto Sans KR"; font-size:24px; font-weight:400; color:#333} 
+	a {font-family:"Noto Sans KR"; font-size:24px; color:#333;text-decoration:none}
+	a:hover,a:active,a:focus {color:#cd2125}  
+	img,fieldset,iframe {border:0}
+	img {vertical-align:top}
+	.hide {display:none}
+		
+	/* layout */
+	#header {width:100%;height:130px;background:url(../images/h_bar.jpg) repeat-x 0 0}
+	#header .inner {position:relative;margin:0 auto;width:1100px;height:130px;z-index:99999}
+	#visual {height:260px}
+	#contents {margin:0 auto;width:1100px;height:1800px;overflow:hidden}
+	#footer {width:100%;background:url(../images/f_bar.jpg) repeat-x 0 0;font:12px "Noto Sans KR";color:#fff}
+	#footer .inner {position:relative;margin:0 auto;width:1100px;height:100px}
+
+	/* header */
+	#header .inner .logo {position:absolute;left:0;top:55px}
+	#header .inner #gnb {position:absolute;width:700px;left:400px;top:55px}
+	#header .inner #gnb .main {position:relative;float:left;width:150px;height:60px;line-height:60px;text-align:center;font-size:30px;font-weight:500;margin-right:1px}
+	#header .inner #gnb .sub {position:absolute;left:0;top:60px;width:150px;height:0; display:none;background:#fff} 
+	#header .inner #gnb .sub li {width:150px;height:60px}
+	#header .inner #gnb .sub li a {font-size:16px}
+	/* 메뉴 hover */
+	#header .inner #gnb .main:hover .sub {display:block}
+	#header .inner #gnb .main:hover .sub li {background:#fff}
+	#header .inner #gnb .sub li:hover {background:#fff}
+	/* topmenu */
+	#header .inner #topmenu {position:absolute;right:0;top:0px}
+	#header .inner #topmenu li {float:left;margin-left:30px}
+	#header .inner #topmenu li a {display:inline-block;font-size:14px}
+	#header .inner #topmenu #lang {border:none;background:transparent;color:#333;font-family:"Noto Sans KR";font-size:14px}
+
+	/* visual */
+	#visual {height:250px}
+
+	/* contents */
+	
+	/* footer */
+	#footer .f_logo {position:absolute;left:0;top:20px}
+	#footer .copyright {position:absolute;left:350px;top:30px}
+	#footer .copyright address {font-style:normal}
+	#footer #site {position:absolute;right:0;top:30px;border:0;background:#cd2125;color:#fff}
